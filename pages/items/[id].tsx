@@ -1,6 +1,6 @@
 import { HeartIcon } from '@heroicons/react/outline';
 
-export default function item() {
+export default function Item() {
   return (
     <div className="py-8 px-4">
       <div className="aspect-square bg-slate-300 rounded-2xl" />
