@@ -1,9 +1,17 @@
+import { useRouter } from 'next/router';
+
 export default function Home() {
+  const router = useRouter();
+
   return (
     <>
       <ul className="flex flex-col divide-y py-4">
         {[...Array(10)].map((_, i) => (
-          <li className="flex py-2 px-4" key={i}>
+          <li
+            key={i}
+            className="flex py-2 px-4 cursor-pointer"
+            onClick={() => router.push('/items/3')}
+          >
             <div className="flex items-center flex-1">
               <div className="w-24 h-24 bg-slate-400 rounded-lg" />
               <div className="ml-4 flex flex-col">
