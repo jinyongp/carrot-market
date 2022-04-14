@@ -28,6 +28,10 @@
   .input-default {
     @apply border-2 w-full p-2 px-4 rounded-lg focus:border-orange-500 transition shadow-sm;
   }
+
+  .hover-active {
+    @apply cursor-pointer transition hover:shadow hover:-translate-y-0.5 active:translate-y-0 active:shadow-none;
+  }
 }
 
 @layer utilities {

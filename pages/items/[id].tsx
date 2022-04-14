@@ -40,12 +40,14 @@ export default function item() {
         </div>
       </div>
       <div className="py-2">
-        <h2 className="text-gray-700 font-semibold text-2xl">Similar items</h2>
+        <h2 className="text-gray-700 font-semibold text-2xl my-2">
+          Similar items
+        </h2>
         <div className="grid grid-cols-2 gap-2">
           {[...Array(10)].map((_, i) => (
             <div
               key={i}
-              className="flex flex-col text-center p-2 rounded-lg hover:shadow cursor-pointer transition-shadow"
+              className="flex flex-col text-center p-2 rounded-lg hover-active"
             >
               <div className="aspect-square bg-slate-300 rounded-lg mb-2" />
               <h3 className="text-gray-700 font-medium text-base">
