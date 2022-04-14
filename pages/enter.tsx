@@ -54,7 +54,7 @@ export default function Enter() {
                 id={method}
                 type="text"
                 className={`
-                border-2 w-full p-2 px-4 rounded-lg focus:border-orange-500 transition shadow-sm
+                input-default
                 ${method === 'email' ? '' : 'rounded-l-none'}
               `}
               />
