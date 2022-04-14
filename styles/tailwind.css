@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  input {
+    @apply outline-none;
+  }
+  button {
+    @apply outline-none;
+  }
+}
+
+@layer components {
+  .focus-ring {
+    @apply focus:ring-2 focus:ring-offset-1 transition-shadow;
+  }
+
+  .btn-default {
+    @apply text-sm text-gray-500 p-2 w-full rounded-lg flex justify-center items-center border-2 border-gray-300 shadow-sm transition;
+  }
+
+  .btn-primary {
+    @apply btn-default border-none bg-orange-500 text-white active:bg-orange-500 hover:bg-orange-400 focus-ring focus:ring-orange-400;
+  }
+}
+
+@layer utilities {
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    display: none;
+  }
+}
