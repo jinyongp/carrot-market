@@ -42,7 +42,7 @@ export default function Enter() {
             </div>
           </div>
           <form className="px-4 py-2">
-            <label className="text-sm text-gray-600">
+            <label className="text-sm text-gray-600" htmlFor={method}>
               {method === 'email' ? 'Email address' : 'Phone number'}
             </label>
             <div className="flex">
@@ -51,6 +51,7 @@ export default function Enter() {
               </span>
               <input
                 required
+                id={method}
                 type="text"
                 className={`
                 border-2 w-full p-2 px-4 rounded-lg focus:border-orange-500 transition shadow-sm
