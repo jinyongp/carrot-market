@@ -10,11 +10,11 @@ export default function Community() {
 
   return (
     <div className="py-8">
-      <ul className="flex flex-col gap-2 bg-slate-100">
+      <ul className="flex flex-col gap-2 divide-y-8 divide-slate-200">
         {[...Array(10)].map((_, i) => (
           <li
             key={i}
-            className="flex flex-col bg-white cursor-pointer"
+            className="flex flex-col cursor-pointer"
             onClick={() => router.push('/community/3')}
           >
             <div className="flex flex-col gap-2 p-4">
