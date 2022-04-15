@@ -48,7 +48,10 @@ export default function Community() {
           </li>
         ))}
       </ul>
-      <button className="fixed bottom-12 right-12 bg-orange-400 hover:bg-orange-500 transition-colors text-white p-4 rounded-full pointer-cursor shadow-md">
+      <button
+        className="fixed bottom-12 right-12 bg-orange-400 hover:bg-orange-500 transition-colors text-white p-4 rounded-full pointer-cursor shadow-md"
+        onClick={() => router.push('/community/write')}
+      >
         <PencilIcon className="w-6 h-6" />
       </button>
     </div>
