@@ -1,12 +1,10 @@
 import { CheckCircleIcon, ChatIcon } from '@heroicons/react/outline';
+import Layout from '../../components/layout';
 
 export default function CommunityPost() {
   return (
-    <div>
-      <div className="px-4 pt-8">
-        <span className="text-xs text-gray-700 bg-gray-100 w-fit px-1.5 py-0.5 rounded-sm">
-          동네질문
-        </span>
+    <Layout title="동네생활" canGoBack hasTabBar={false}>
+      <div className="px-4">
         <div className="flex gap-2 py-4 items-center cursor-pointer">
           <div className="w-12 aspect-square rounded-full bg-slate-300" />
           <div className="flex flex-col grow">
@@ -17,9 +15,13 @@ export default function CommunityPost() {
           </div>
         </div>
       </div>
-      <div className="flex gap-1 font-normal text-gray-800 p-4 border-t">
-        <span className="text-orange-400">Q.</span>
-        <span className="">What is the best mandu restaurant?</span>
+      <div className="flex flex-col gap-1 p-4 border-t">
+        <span className="text-xs text-gray-700 font-normal bg-gray-100 w-fit px-1.5 py-0.5 rounded-sm">
+          동네질문
+        </span>
+        <span className="before:content-['Q.'] before:text-orange-400 before:mr-1">
+          What is the best mandu restaurant?
+        </span>
       </div>
       <p className="text-sm text-gray-600 px-4 pb-4">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia distinctio
@@ -53,7 +55,7 @@ export default function CommunityPost() {
           </li>
         ))}
       </ul>
-      <form className="space-y-2 px-4 mt-4">
+      <form className="space-y-2 p-4">
         <label className="flex flex-col gap-1">
           <textarea
             rows={4}
@@ -63,6 +65,6 @@ export default function CommunityPost() {
         </label>
         <button className="btn-primary">Reply</button>
       </form>
-    </div>
+    </Layout>
   );
 }
