@@ -33,7 +33,7 @@ export default function Layout({
         >
           {canGoBack && <ChevronLeftIcon className="w-6 aspect-square" />}
         </button>
-        <h1 className="grow text-gray-800 font-bold text-lg text-center">
+        <h1 className="grow text-gray-800 font-bold text-lg flex justify-center whitespace-nowrap">
           {title}
         </h1>
         <button className="grow" role="none"></button>

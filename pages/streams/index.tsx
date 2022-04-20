@@ -7,7 +7,7 @@ export default function Streams() {
   const { push, pathname } = useRouter();
 
   return (
-    <Layout title="라이브 스트리밍">
+    <Layout title="Live Streams">
       <ul className="p-4 space-y-4">
         {[...Array(10)].map((_, i) => (
           <li
@@ -20,7 +20,7 @@ export default function Streams() {
           </li>
         ))}
       </ul>
-      <Fab path={`${pathname}/upload`}>
+      <Fab path={`${pathname}/create`}>
         <VideoCameraIcon className="w-6 h-6" />
       </Fab>
     </Layout>
