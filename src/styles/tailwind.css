@@ -23,6 +23,10 @@
   button {
     @apply outline-none;
   }
+
+  #__next {
+    @apply w-full mx-auto max-w-lg;
+  }
 }
 
 @layer components {

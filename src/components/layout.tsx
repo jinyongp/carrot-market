@@ -26,7 +26,7 @@ export default function Layout({
 
   return (
     <main className="flex flex-col h-screen">
-      <header className="fixed top-0 w-full h-16 px-4 grid grid-cols-3 place-content-center  bg-white border-b">
+      <header className="fixed top-0 w-full max-w-lg h-16 px-4 grid grid-cols-3 place-content-center  bg-white border-b">
         <button
           className={`grow ${canGoBack || 'invisible'}`}
           onClick={() => back()}
@@ -42,7 +42,7 @@ export default function Layout({
         {children}
       </section>
       {hasTabBar && (
-        <nav className="fixed bottom-0 w-full h-16 bg-white border-t">
+        <nav className="fixed bottom-0 w-full max-w-lg h-16 bg-white border-t">
           <ul className="h-full flex items-center justify-around relative">
             {[
               ['홈', HomeIcon, '/'],
