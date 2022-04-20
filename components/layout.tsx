@@ -25,7 +25,7 @@ export default function Layout({
   const { pathname, back } = useRouter();
 
   return (
-    <main>
+    <main className="flex flex-col h-screen">
       <header className="fixed top-0 w-full h-16 px-4 grid grid-cols-3 place-content-center  bg-white border-b">
         <button
           className={`grow ${canGoBack || 'invisible'}`}
@@ -38,7 +38,7 @@ export default function Layout({
         </h1>
         <button className="grow" role="none"></button>
       </header>
-      <section className={`mt-16 ${hasTabBar ? 'mb-16' : ''}`}>
+      <section className={`mt-16 overflow-y-auto ${hasTabBar && 'mb-16'}`}>
         {children}
       </section>
       {hasTabBar && (

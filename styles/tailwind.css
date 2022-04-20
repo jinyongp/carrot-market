@@ -7,10 +7,19 @@
     @apply focus:outline-none;
   }
 
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  html {
+    overflow-y: hidden;
+  }
+
   input,
   textarea {
     @apply outline-none;
   }
+
   button {
     @apply outline-none;
   }
