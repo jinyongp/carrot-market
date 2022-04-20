@@ -1,7 +1,7 @@
+import Fab from '@/components/fab';
+import Layout from '@/components/layout';
 import { VideoCameraIcon } from '@heroicons/react/solid';
 import { useRouter } from 'next/router';
-import Fab from '../../components/fab';
-import Layout from '../../components/layout';
 
 export default function Streams() {
   const { push, pathname } = useRouter();

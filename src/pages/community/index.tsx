@@ -1,11 +1,11 @@
+import Fab from '@/components/fab';
+import Layout from '@/components/layout';
 import {
   ChatIcon,
   CheckCircleIcon,
   PencilIcon,
 } from '@heroicons/react/outline';
 import { useRouter } from 'next/router';
-import Fab from '../../components/fab';
-import Layout from '../../components/layout';
 
 export default function Community() {
   const router = useRouter();

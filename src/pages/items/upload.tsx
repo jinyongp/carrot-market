@@ -1,5 +1,5 @@
+import Layout from '@/components/layout';
 import { PhotographIcon, UploadIcon } from '@heroicons/react/outline';
-import Layout from '../../components/layout';
 
 export default function Upload() {
   return (

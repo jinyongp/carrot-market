@@ -1,6 +1,6 @@
+import Layout from '@/components/layout';
 import { HeartIcon } from '@heroicons/react/outline';
 import { useRouter } from 'next/router';
-import Layout from '../../components/layout';
 
 export default function Item() {
   const router = useRouter();

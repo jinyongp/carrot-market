@@ -1,6 +1,5 @@
-import { PaperAirplaneIcon } from '@heroicons/react/outline';
-import Layout from '../../components/layout';
-import MessageForm from '../../components/message-form';
+import Layout from '@/components/layout';
+import MessageForm from '@/components/message-form';
 
 export default function ChatRoom() {
   return (

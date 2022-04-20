@@ -1,3 +1,4 @@
+import Layout from '@/components/layout';
 import {
   HeartIcon,
   ShoppingBagIcon,
@@ -5,7 +6,6 @@ import {
 } from '@heroicons/react/outline';
 import { StarIcon } from '@heroicons/react/solid';
 import { useRouter } from 'next/router';
-import Layout from '../../components/layout';
 
 export default function Profile() {
   const router = useRouter();

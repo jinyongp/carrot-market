@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { ChatIcon, HeartIcon, PlusIcon } from '@heroicons/react/outline';
-import Layout from '../components/layout';
-import Fab from '../components/fab';
+import Layout from '@/components/layout';
+import Fab from '@/components/fab';
 
 export default function Home() {
   const router = useRouter();

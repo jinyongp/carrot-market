@@ -1,5 +1,5 @@
+import Layout from '@/components/layout';
 import { CheckCircleIcon, ChatIcon } from '@heroicons/react/outline';
-import Layout from '../../components/layout';
 
 export default function CommunityPost() {
   return (
