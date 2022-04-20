@@ -1,12 +1,13 @@
 import { useRouter } from 'next/router';
 import { ChatIcon, HeartIcon, PlusIcon } from '@heroicons/react/outline';
+import Layout from '../components/layout';
 
 export default function Home() {
   const router = useRouter();
 
   return (
-    <>
-      <ul className="flex flex-col divide-y py-4">
+    <Layout title="홈">
+      <ul className="flex flex-col divide-y">
         {[...Array(10)].map((_, i) => (
           <li
             key={i}
@@ -44,6 +45,6 @@ export default function Home() {
       >
         <PlusIcon className="w-6 h-6" />
       </button>
-    </>
+    </Layout>
   );
 }

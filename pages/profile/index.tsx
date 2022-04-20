@@ -5,14 +5,15 @@ import {
 } from '@heroicons/react/outline';
 import { StarIcon } from '@heroicons/react/solid';
 import { useRouter } from 'next/router';
+import Layout from '../../components/layout';
 
 export default function Profile() {
   const router = useRouter();
 
   return (
-    <div className="py-8 px-4">
+    <Layout title="계정">
       <div
-        className="flex gap-2 py-4 items-center cursor-pointer w-fit"
+        className="px-4 flex gap-2 py-4 items-center cursor-pointer w-fit"
         onClick={() => router.push('/profile/edit')}
       >
         <div className="w-12 aspect-square rounded-full bg-slate-300" />
@@ -23,7 +24,7 @@ export default function Profile() {
           </p>
         </div>
       </div>
-      <div className="flex justify-around text-sm text-center my-8">
+      <div className="px-4 flex justify-around text-sm text-center my-8">
         {[
           [ShoppingCartIcon, '판매내역', '/profile/sales'],
           [ShoppingBagIcon, '구매내역', '/profile/purchases'],
@@ -41,7 +42,7 @@ export default function Profile() {
           </div>
         ))}
       </div>
-      <div>
+      <div className="px-4">
         <div className="flex items-center gap-2">
           <div className="w-12 aspect-square rounded-full bg-slate-300" />
           <div>
@@ -67,6 +68,6 @@ export default function Profile() {
           it over to your dumb ass.
         </p>
       </div>
-    </div>
+    </Layout>
   );
 }

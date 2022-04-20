@@ -4,12 +4,13 @@ import {
   PencilIcon,
 } from '@heroicons/react/outline';
 import { useRouter } from 'next/router';
+import Layout from '../../components/layout';
 
 export default function Community() {
   const router = useRouter();
 
   return (
-    <div className="py-8">
+    <Layout title="동네생활">
       <ul className="flex flex-col gap-2 divide-y-8 divide-slate-200">
         {[...Array(10)].map((_, i) => (
           <li
@@ -54,6 +55,6 @@ export default function Community() {
       >
         <PencilIcon className="w-6 h-6" />
       </button>
-    </div>
+    </Layout>
   );
 }

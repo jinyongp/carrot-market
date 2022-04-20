@@ -1,28 +1,32 @@
 import { useRouter } from 'next/router';
+import Layout from '../../components/layout';
 
 export default function Chats() {
   const router = useRouter();
 
   return (
-    <ul className="py-8 divide-y-[1px]">
-      {[...Array(10)].map((_, i) => (
-        <li
-          key={i}
-          className="px-4 cursor-pointer"
-          onClick={() => router.push('/chats/3')}
-        >
-          <div className="flex gap-2 py-4 items-center cursor-pointer">
-            <div className="w-12 aspect-square rounded-full bg-slate-300" />
-            <div className="flex flex-col grow">
-              <p className="text-gray-700 font-medium text-sm">Steve Jebs</p>
-              <p className="text-gray-500 font-medium text-xs line-clamp-1 text-ellipsis">
-                Amet ad velit Lorem nulla incididunt laborum qui magna ullamco
-                voluptate nulla Lorem nulla.
-              </p>
+    <Layout title="채팅">
+      <ul className="divide-y-[1px]">
+        {[...Array(10)].map((_, i) => (
+          <li
+            key={i}
+            tabIndex={0}
+            className="px-4 cursor-pointer border-dashed"
+            onClick={() => router.push('/chats/3')}
+          >
+            <div className="flex gap-2 py-4 items-center cursor-pointer">
+              <div className="w-12 aspect-square rounded-full bg-slate-300" />
+              <div className="flex flex-col grow">
+                <p className="text-gray-700 font-medium text-sm">Steve Jebs</p>
+                <p className="text-gray-500 font-medium text-xs line-clamp-1 text-ellipsis">
+                  Amet ad velit Lorem nulla incididunt laborum qui magna ullamco
+                  voluptate nulla Lorem nulla.
+                </p>
+              </div>
             </div>
-          </div>
-        </li>
-      ))}
-    </ul>
+          </li>
+        ))}
+      </ul>
+    </Layout>
   );
 }
