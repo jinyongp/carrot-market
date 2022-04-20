@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { ChatIcon, HeartIcon, PlusIcon } from '@heroicons/react/outline';
 import Layout from '../components/layout';
+import Fab from '../components/fab';
 
 export default function Home() {
   const router = useRouter();
@@ -39,12 +40,9 @@ export default function Home() {
           </li>
         ))}
       </ul>
-      <button
-        onClick={() => router.push('/items/upload')}
-        className="fixed bottom-12 right-12 bg-orange-400 hover:bg-orange-500 transition-colors text-white p-4 rounded-full pointer-cursor shadow-md"
-      >
+      <Fab path="/items/upload">
         <PlusIcon className="w-6 h-6" />
-      </button>
+      </Fab>
     </Layout>
   );
 }
